@@ -1,5 +1,6 @@
 
 #import "RNTestLib.h"
+#import <React/RCTLog.h>
 
 @implementation RNTestLib
 
@@ -10,7 +11,7 @@
 RCT_EXPORT_MODULE()
 
 RCT_EXPORT_METHOD(test) {
-    NSLog(@"test has been called");
+    RCTLogInfo(@"TEST METHOD HAS BEEN CALLED");
 }
 
 @end

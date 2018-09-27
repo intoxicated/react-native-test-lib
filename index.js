@@ -1,18 +1,6 @@
 
-'use strict';
+import { NativeModules } from 'react-native';
 
-const NativeFramework = require('NativeModules').RNTestLib;
+const { RNTestLib } = NativeModules;
 
-const RNTestLib = {
-  test: function () {
-	NativeFramework.test();
-  },
-};
-
-module.exports = RNTestLib;
-
-//import { NativeModules } from 'react-native';
-
-//const { RNTestLib } = NativeModules;
-
-//export default RNTestLib;
+export default RNTestLib;
